@@ -77,12 +77,12 @@ export default class App extends React.Component {
             this.state.todos.reduce((acc, td) => {
               if (this.state.displayCompleted) return acc.concat(
                   <div onClick={this.toggleCompleted(td.id)} key={td.id}>{td.name} {td.completed ? ' T' : '' }</div>
-                );
+                )
               // if (!td.completed) return acc.concat(td);
-              return acc;
+              return acc
 
               // return 
-              
+            }
           }
           
         </div>
